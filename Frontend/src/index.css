@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* @apply bg-background text-text-primary font-sans; */
+}
+
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F9FA;
+  color: #1E2A38;
+}
+
+
+/* Button styles */
+.btn-primary {
+  background-color: #1E2A38;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0F172A;
+}
+
+.btn-accent {
+  background-color: #17C3B2;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #0D9488;
+}
+
+/* Alert styles */
+.alert-box {
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #FF6B6B;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
